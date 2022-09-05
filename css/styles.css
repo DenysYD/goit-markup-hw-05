@@ -125,25 +125,24 @@ body {
 
 .list-nav-item {
     color: var(--secondary-text-color-teme-light);
+    transition: color var(--timing-functione);
 }
 
 .list-contacts-item {
     color: var(--primari-text-color-teme-light);
+    transition: color var(--timing-functione);
 }
 
 .list-nav-item:hover,
 .list-nav-item:focus {
     color: var(--accent-color);
 
-    transition: var(--timing-functione);
 }
 
 
 .list-contacts-item:hover,
 .list-contacts-item:focus {
     color: var(--accent-color);
-
-    transition: var(--timing-functione);
 
 }
 
@@ -251,7 +250,6 @@ body {
 .hero-btn:focus {
     background-color: var(--color-btn-active);
 
-    transition: var(--timing-functione);
 }
 
 .backdrop {
@@ -293,19 +291,14 @@ body {
 
 .close-button {
     position: absolute;
-    top: 0;
-    right: 0;
-
-
-    margin-top: 8px;
-    margin-right: 8px;
+    top: 8px;
+    right: 8px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -411,13 +404,9 @@ body {
     color: #FFFFFF;
     background-color: rgba(47, 48, 58, 0.8);
     bottom: 0;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    padding-left: 10px;
-    padding-right: 10px;
+    line-height: 70px;
     width: 100%;
-    overflow: auto;
-    transform: translateY(0%);
+    
 
 }
 
@@ -487,6 +476,8 @@ body {
     height: 44px;
     border-radius: 50%;
     background-color: #ffffff;
+
+    transition: background-color var(--timing-functione);
 }
 
 .social-list-icon {
@@ -497,14 +488,12 @@ body {
 .social-list-link:focus {
     background-color: var(--accent-color);
 
-    transition: color var(--timing-functione);
 }
 
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
     fill: #ffffff;
 
-    transition: color var(--timing-functione);
 }
 
 /*CUSTOMERS*/
@@ -525,10 +514,14 @@ body {
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+
+    transition: border var(--timing-functione), border-radius var(--timing-functione);
 }
 
 .customers-list-item:nth-child(6n) {
     margin-right: 0;
+
+    transition: fill var(--timing-functione);
 }
 
 .customers-list > .icon-customers {
@@ -551,14 +544,12 @@ body {
 .customers-link:focus {
     border-color: var(--accent-color);
 
-    transition: color var(--timing-functione);
 }
 
 .customers-link:hover .icon-customers,
 .customers-link:focus .icon-customers {
     fill: var(--accent-color);
 
-    transition: color var(--timing-functione);
 }
 /* FOOTER */
 address {
@@ -587,6 +578,8 @@ address {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color-teme-dark);
+
+    transition: color var(--timing-functione);
 }
 
 .end-item:not(:last-child) {
@@ -597,7 +590,6 @@ address {
 .end-list-item:focus {
     color: var(--accent-color);
 
-    transition: color var(--timing-functione);
 }
 
 .maps {
@@ -654,9 +646,9 @@ address {
     border-radius: 4px;
     transition: 
     color 
-    var(--transition-dur-and-func), 
-    background-color var(--transition-dur-and-func), 
-    box-shadow var(--transition-dur-and-func);
+    var(--timing-functione), 
+    background-color var(--timing-functione), 
+    box-shadow var(--timing-functione);
 }
 
 .filter-btn:hover,
@@ -668,7 +660,6 @@ address {
     0px 1px 2px rgba(0, 0, 0, 0.08), 
     0px 2px 2px rgba(0, 0, 0, 0.12);
 
-    transition: color var(--timing-functione);
     }
 
 .project-list {
@@ -728,7 +719,6 @@ address {
     0px 4px 4px rgba(0, 0, 0, 0.06), 
     1px 4px 6px rgba(0, 0, 0, 0.16);
 
-    transition: color var(--timing-functione);
 }
 
 .project-list-img-wrapper {
