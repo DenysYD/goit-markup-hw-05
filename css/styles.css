@@ -514,10 +514,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
 
-    transition: border var(--timing-functione), 
+    transition: border var(--timing-functione);
 }
 
 .customers-list-item:nth-child(6n) {
@@ -535,6 +533,7 @@ body {
 
 .icon-customers {
     fill: #AFB1B8;
+    transition: fill var(--timing-functione);
 }
 
 .customers-link {
